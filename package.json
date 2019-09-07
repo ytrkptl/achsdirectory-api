@@ -1,7 +1,7 @@
 {
   "name": "achsdirectory-api2",
   "version": "1.0.0",
-  "description": "This is the backend for achsdirectory frontend",
+  "description": "This is the backend for achsdirectory frontend.",
   "main": "server.js",
   "dependencies": {
     "airtable": "^0.7.1",
