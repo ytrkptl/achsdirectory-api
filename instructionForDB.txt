@@ -13,7 +13,7 @@ BEGIN TRANSACTION;
 CREATE TABLE login (
   id serial PRIMARY KEY,
   hash VARCHAR(100) NOT NULL,
-  email text UNIQUE NOT NULL
+  email text UNIQUE NOT NULL 
 );
 COMMIT;
 
@@ -29,6 +29,6 @@ COMMIT;
 
 
 BEGIN TRANSACTION;
-INSERT into admin (name, email, score, joined) values ('a', 'a@a.com', 5, '2019-08-12');
+INSERT into admin (name, email, joined) values ('a', 'a@a.com', '2019-09-07');
 INSERT into login(hash, email) values ('$2a$10$WAK21U0LWl7C//jJ.DOB2uPP1DJQh7KUDgasdyQeGzkop2Pzl8W7u', 'a@a.com');
 COMMIT;
