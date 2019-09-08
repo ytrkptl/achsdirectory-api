@@ -11,7 +11,7 @@ const handleAdminSignin = (req, res, db, bcrypt) => {
          return db.select('*').from('admin')
           .where('email', '=', email)
           .then(admin => {
-            res.json(admin[0])
+            res.status(200).json('success');
           })
           .catch(err => res.status(400).json('unable to get user'))
       } else {
