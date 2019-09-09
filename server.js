@@ -7,6 +7,9 @@ const knex = require('knex');
 const bcrypt = require('bcrypt');
 const saltRounds = 10;
 
+// comes with Express.
+const path = require('path');
+
 const tabs = require('./controllers/tabs');
 const adminSignin = require('./controllers/adminSignin');
 const addEmployee = require('./controllers/addEmployee');
@@ -41,8 +44,8 @@ const db = knex({
 // the home page of frontend calls this GET method
 // NOTE: the base here refers to Airtable from above.
 app.get('/', (req, res) => {
-	res.send('It is working');
-})
+  res.sendFile(path.join(__dirname, 'index.html'));
+});
 
 // the home page of frontend calls this GET method
 // NOTE: the base here refers to Airtable from above.
