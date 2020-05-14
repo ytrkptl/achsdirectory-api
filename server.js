@@ -16,5 +16,5 @@ app.use(cors());
 app.use(routes);
 
 // check .env file to see what port is being used.
-const port = process.env.NODE_ENV || 3000;
+const port = process.env.PORT || 3000;
 app.listen(port, () => console.log(`app is running on port ${port}`));
