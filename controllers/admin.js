@@ -2,7 +2,7 @@ function ContactObject(id, contacts) {
     this.id = id;
     this.contacts = contacts;
 }
- function contacts(lastname, firstname, phone, department, email, id, url, room, firstblock, secondblock, thirdblock, fourthblock, lunch) {
+function contacts(lastname, firstname, phone, department, email, id, url, room, firstblock, secondblock, thirdblock, fourthblock, lunch) {
     this.lastname = lastname;
     this.firstname = firstname;
     this.phone = phone;
@@ -40,9 +40,9 @@ const handleAddEmployee = (req, res, base) => {
     //   console.log(record.getId());
     //   res.json(record.getId());
     // });
-    
+
 }
 
 module.exports = {
-  handleAddEmployee
+    handleAddEmployee
 }
