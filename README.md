@@ -12,7 +12,7 @@
   -- Make sure you are using the proper column names and such before
   -- beginning transaction
 
-<!-- the block below can be run as-is or directly copy-pasted in the terminal -->
+> "the block below can be run as-is or directly copy-pasted in the terminal"
 
     BEGIN TRANSACTION;
     CREATE TABLE login (
@@ -22,7 +22,7 @@
     );
     COMMIT;
 
-<!-- the block below can be run as-is or directly copy-pasted in the terminal -->
+> "the block below can be run as-is or directly copy-pasted in the terminal"
 
     BEGIN TRANSACTION;
     CREATE TABLE admin (
@@ -33,16 +33,14 @@
     );
     COMMIT;
 
-<!--
-Be sure to replace ADMIN_NAME, ADMIN_EMAIL, with their values instead.
-Be sure to replace ADMIN_HASH with a hash generated using a site like https://bcrypt-generator.com/ .
-You can use your desired password on that site to generate a hash and store the hash in the database
-instead of storing the password.
-Use proper date for joined value as well.
--->
+> "Be sure to replace ADMIN_NAME, ADMIN_EMAIL, with their values instead.
+> Be sure to replace ADMIN_HASH with a hash generated using a site like https://bcrypt-generator.com/ .
+> You can use your desired password on that site to generate a hash and store the hash in the database
+> instead of storing the password.
+> Use proper date for joined value as well."
 
-<!-- The block below SHOULD NOT be directly run or copy-pasted. First read the note above and replace
-appropriate values in the commands below. Then run the commands below in the terminal. -->
+> "The block below SHOULD NOT be directly run or copy-pasted. First read the note above and replace
+> appropriate values in the commands below. Then run the commands below in the terminal."
 
     BEGIN TRANSACTION;
     INSERT into admin (name, email, joined) values ('ADMIN_NAME', 'ADMIN_EMAIL', '2019-09-07');
