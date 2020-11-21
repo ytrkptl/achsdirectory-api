@@ -25,7 +25,7 @@ router.get("/home", (req, res) => {
 });
 
 // an endpoint to check phone number is valid
-// not yet implemented
+// not yet implemented.
 router.get("/checkphone/:phone", (req, res) => {
   checkPhone.handleCheckPhone(req, res);
 });
