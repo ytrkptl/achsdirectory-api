@@ -18,6 +18,9 @@ router.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "..", "index.html"));
 });
 
+// to avoid favicon errors
+router.get("/favicon.ico", (req, res) => res.status(200));
+
 // the home page of frontend calls this GET method
 // NOTE: the base here refers to Airtable from above.
 router.get("/home", (req, res) => {
